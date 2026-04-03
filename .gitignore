@@ -1,12 +1,8 @@
-# Node dependencies
 node_modules/
 functions/node_modules/
-
-# Firebase logs and local state
-firebase-debug.log
 .firebase/
-
-# OS/editor noise
-.DS_Store
-Thumbs.db
+.firebaserc.local
+firebase-debug.log
 .vscode/
+.env
+.env.*
