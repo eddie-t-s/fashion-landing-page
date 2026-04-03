@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zero Fold</title>
+  <meta name="description" content="Atelier North is a modern fashion brand blending precision tailoring with contemporary streetwear aesthetics." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cormorant+Garamond:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/zf.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page-loading">
+  <div class="intro-splash" id="introSplash" aria-hidden="true">
+    <img src="assets/tag.jpeg" alt="Zero Fold tag mark" />
+  </div>
+
+  <div class="grain"></div>
+
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary navigation">
+      <ul class="nav-links nav-left">
+        <li><a href="#collection">Home</a></li>
+        <li><a href="#lookbook">Shop</a></li>
+        <li><a href="#story">About</a></li>
+        <li><a href="#newsletter">FAQ</a></li>
+        <li><a href="#newsletter">Contact</a></li>
+      </ul>
+
+      <a class="brand brand-logo" href="#collection" aria-label="Zero Fold home">
+        <img src="assets/zf.png" alt="Zero Fold logo" />
+      </a>
+
+      <div class="nav-actions">
+        <a class="login-link" href="#newsletter">Login</a>
+        <button class="icon-btn" type="button" aria-label="Search">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="11" r="6.5"></circle>
+            <path d="M16 16L21 21"></path>
+          </svg>
+        </button>
+        <button class="icon-btn" type="button" aria-label="Bag">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7 9.5H17L16.2 20H7.8L7 9.5Z"></path>
+            <path d="M9.5 9.5V7.8C9.5 6.25 10.62 5 12 5C13.38 5 14.5 6.25 14.5 7.8V9.5"></path>
+          </svg>
+        </button>
+      </div>
+
+      <button class="menu-btn" aria-label="Open menu">Menu</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="collection">
+      <div class="hero-copy reveal-up">
+        <p class="eyebrow">Zero Fold Manifesto</p>
+        <p class="manifesto-lead">
+          <span class="brand-mark">Zero Fold</span> is a mindset. It is for those who refuse to shrink, bend, or fit into
+          expectations. Built on confidence, individuality, and culture, every piece
+          represents the freedom to stand fully in who you are, unapologetically. This is
+          more than clothing. This is Zero Fold.
+        </p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="#lookbook">Explore Lookbook</a>
+          <a class="btn btn-ghost" href="#story">Read Our Story</a>
+        </div>
+      </div>
+
+      <div class="hero-card event-board reveal-up delay-1">
+        <p class="event-label">Upcoming Event</p>
+        <h2 class="event-title">Zero Fold Pop-Up Exclusive</h2>
+        <p class="event-meta">Adweso, Bluestreet | April 04, 2026 at 11am til late</p>
+
+        <div class="countdown" aria-live="polite">
+          <div class="countdown-item">
+            <span id="days">00</span>
+            <small>Days</small>
+          </div>
+          <div class="countdown-item">
+            <span id="hours">00</span>
+            <small>Hours</small>
+          </div>
+          <div class="countdown-item">
+            <span id="minutes">00</span>
+            <small>Minutes</small>
+          </div>
+          <div class="countdown-item">
+            <span id="seconds">00</span>
+            <small>Seconds</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slideshow-section reveal-up delay-2" id="lookbook">
+      <div class="slideshow-head">
+        <h2>Runway Lookbook</h2>
+        <div class="controls">
+          <button id="prevBtn" aria-label="Previous image">Previous</button>
+          <button id="nextBtn" aria-label="Next image">Next</button>
+        </div>
+      </div>
+
+      <div class="slideshow" aria-live="polite">
+        <img id="slideImage" src="" alt="Fashion lookbook slideshow image" />
+        <div class="slide-overlay">
+          <span id="slideCounter">1 / 100</span>
+          <span id="slideCaption">Look 1</span>
+        </div>
+      </div>
+
+      <div class="dots" id="dotsContainer" aria-hidden="true"></div>
+    </section>
+
+    <section class="story" id="story">
+      <article class="reveal-up">
+        <h3>Crafted To Last</h3>
+        <p>
+        Our collections feature minimal essentials, statement designs, and Ghana-inspired jerseys, all crafted with attention to detail, comfort, and fit. Each item is made to be easily styled while still standing out.
+        </p>
+      </article>
+      <article class="reveal-up delay-1">
+        <h3>Intentional Details</h3>
+        <p>
+          Zero Fold is a contemporary streetwear brand offering clean, versatile pieces designed for everyday wear and bold expression.
+        </p>
+      </article>
+      <article class="reveal-up delay-2" id="newsletter">
+        <h3>Join The Circle</h3>
+        <p>Get early access to drops, private sales, and studio notes.</p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="you@example.com" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </article>
+    </section>
+
+    <section class="shirts-section reveal-up" id="shirts">
+      <div class="shirts-head">
+        <p class="eyebrow">Latest</p>
+        <h2>Refined Essentials</h2>
+        <p>Impeccably cut pieces designed for quiet luxury, effortless presence, and lasting wear.</p>
+      </div>
+
+      <div class="shirt-grid">
+        <article class="shirt-card featured-jersey">
+          <div class="shirt-visual" aria-label="12 AM Fold product image">
+            <img class="product-shot compact-shot" src="assets/products/12am-fold.jpg" alt="12 AM Fold product image" />
+          </div>
+          <h3>12 AM Fold</h3>
+          <p>A deep black essential built for versatility. Subtle, bold, and effortless.</p>
+          <div class="shirt-meta">
+            <span>GHC 400</span>
+            <button type="button">Add to Bag</button>
+          </div>
+        </article>
+
+        <article class="shirt-card featured-jersey">
+          <div class="shirt-visual" aria-label="Fire Fold product image">
+            <img class="product-shot compact-shot" src="assets/products/fire-fold.jpg" alt="Fire Fold product image" />
+          </div>
+          <h3>Fire Fold</h3>
+          <p>
+            A bold red and black raglan designed to stand out. Built with contrast and
+            energy, this piece brings movement to your style.
+          </p>
+          <div class="shirt-meta">
+            <span>GHC 400</span>
+            <button type="button">Add to Bag</button>
+          </div>
+        </article>
+
+        <article class="shirt-card featured-jersey">
+          <div class="shirt-visual" aria-label="Blate Fold product image">
+            <img class="product-shot compact-shot blate-fold-shot" src="assets/products/blate-fold.jpg" alt="Blate Fold product image" />
+          </div>
+          <h3>Blate Fold</h3>
+          <p>
+            A clean white and grey contrast tee that balances simplicity and edge. Easy to
+            style, made to elevate everyday looks.
+          </p>
+          <div class="shirt-meta">
+            <span>GHC 400</span>
+            <button type="button">Add to Bag</button>
+          </div>
+        </article>
+
+        <article class="shirt-card featured-jersey">
+          <div class="shirt-visual jersey-visual" aria-label="ZF Dark Coast Jersey front and back views">
+            <div class="jersey-flip">
+              <img
+                class="jersey-face jersey-front"
+                src="assets/products/zf-dark-coast-jersey-front.jpg"
+                alt="ZF Dark Coast Jersey front view"
+              />
+              <img
+                class="jersey-face jersey-back"
+                src="assets/products/zf-dark-coast-jersey-back.jpg"
+                alt="ZF Dark Coast Jersey back view"
+              />
+            </div>
+          </div>
+          <h3>ZF Dark Coast Jersey (Black)</h3>
+          <p>
+            Bold, grounded, and unmistakable. This piece draws from Ghana's heritage and
+            identity, expressed through deep tones and striking detail.
+          </p>
+          <div class="shirt-meta">
+            <span>GHC 370</span>
+            <button type="button">Add to Bag</button>
+          </div>
+        </article>
+
+        <article class="shirt-card featured-jersey">
+          <div class="shirt-visual jersey-visual" aria-label="ZF Gold Coast Jersey front and back views">
+            <div class="jersey-flip">
+              <img
+                class="jersey-face jersey-front"
+                src="assets/products/zf-goldcoast-jersey-front.jpg"
+                alt="ZF Gold Coast Jersey front view"
+              />
+              <img
+                class="jersey-face jersey-back"
+                src="assets/products/zf-goldcoast-jersey-back.jpg"
+                alt="ZF Gold Coast Jersey back view"
+              />
+            </div>
+          </div>
+          <h3>ZF Gold Coast Jersey (Yellow)</h3>
+          <p>
+            Bright, powerful, and impossible to ignore. This piece embodies energy,
+            pride, and movement, a standout piece built to reflect confidence and culture.
+          </p>
+          <div class="shirt-meta">
+            <span>GHC 370</span>
+            <button type="button">Add to Bag</button>
+          </div>
+        </article>
+
+        <article class="shirt-card featured-jersey">
+          <div class="shirt-visual jersey-visual" aria-label="Red Snow front and back views">
+            <div class="jersey-flip">
+              <img
+                class="jersey-face jersey-front"
+                src="assets/products/zf-red-snow-front.jpeg"
+                alt="Red Snow front view"
+              />
+              <img
+                class="jersey-face jersey-back"
+                src="assets/products/zf-red-snow-back.jpg"
+                alt="Red Snow back view"
+              />
+            </div>
+          </div>
+          <h3>Red Snow</h3>
+          <p>
+            A clean white statement tee featuring the signature ZF mark. Designed for
+            simplicity, presence, and everyday wear.
+          </p>
+          <div class="shirt-meta">
+            <span>GHC 499</span>
+            <button type="button">Add to Bag</button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-grid">
+      <section class="footer-brand-block">
+        <img src="assets/zf.png" alt="Zero Fold logo" class="footer-logo" />
+        <p>
+          Precision tailoring for modern movement. Designed in studio, refined on the street.
+        </p>
+      </section>
+
+      <section>
+        <h4>Contact</h4>
+        <ul class="footer-links">
+          <li><a href="https://instagram.com/zerofold_culture" target="_blank" rel="noopener noreferrer">Instagram: @zerofold_culture</a></li>
+          <li><a href="tel:+233572201211">Phone: +233 57 220 1211</a></li>
+          <li><a href="mailto:zerofold91@gmail.com">Email: zerofold91@gmail.com</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="footer-bottom">
+      <p>Zero Fold © 2026. All rights reserved.</p>
+      <div>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="order-modal" id="orderModal" hidden aria-hidden="true">
+    <div class="order-modal-backdrop" data-close-order-modal></div>
+    <div class="order-modal-panel" role="dialog" aria-modal="true" aria-labelledby="orderModalTitle">
+      <button class="order-modal-close" type="button" aria-label="Close order form" data-close-order-modal>
+        ×
+      </button>
+      <p class="order-modal-kicker">Order By Email</p>
+      <h3 id="orderModalTitle">Complete Your Request</h3>
+      <p class="order-modal-copy">
+        We do not process checkout on the site yet. Fill this form and we will send your order directly to Zero Fold by email.
+      </p>
+
+      <div class="order-summary">
+        <p><strong>Product:</strong> <span id="orderProductName">-</span></p>
+        <p><strong>Price:</strong> <span id="orderProductPrice">-</span></p>
+      </div>
+
+      <form id="orderForm" class="order-form">
+        <label for="orderEmail">Email Address</label>
+        <input id="orderEmail" name="email" type="email" required placeholder="you@example.com" />
+
+        <label for="orderPhone">Phone Number</label>
+        <input id="orderPhone" name="phone" type="tel" required placeholder="+233 ..." />
+
+        <label for="orderLocation">Location</label>
+        <input id="orderLocation" name="location" type="text" required placeholder="City / Area" />
+
+        <p id="orderFormStatus" class="order-form-status" role="status" aria-live="polite"></p>
+
+        <div class="order-form-actions">
+          <button class="btn btn-ghost" type="button" data-close-order-modal>Cancel</button>
+          <button class="btn btn-primary" id="orderSubmitBtn" type="submit">Send Order</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    window.ZF_ORDER_ENDPOINT = "https://us-central1-zerofold-bde21.cloudfunctions.net/submitOrder";
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
